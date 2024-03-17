@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greeting</title>
+</head>
+<body>
+
+<!-- Content Area -->
+<div id="greetingDisplay"></div>
+
+<!-- JavaScript -->
+<script>
+  // Get the current hour
+  var currentTime = new Date().getHours();
+
+  // Check the current time and display the appropriate greeting
+  if (currentTime < 12) {
+    document.getElementById("greetingDisplay").innerText = "Good Morning!";
+  } else {
+    document.getElementById("greetingDisplay").innerText = "Good Afternoon!";
+  }
+</script>
+
+</body>
+</html>
